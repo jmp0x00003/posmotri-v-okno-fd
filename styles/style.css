@@ -61,8 +61,7 @@ ol {
 }
 
 .result__video-container,
-.content__list-container
-{
+.content__list-container {
   position: relative;
 }
 
@@ -154,10 +153,6 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:hover {
-  cursor: pointer;
-}
-
 .search-form__label:focus-visible {
   outline: 1px solid #fff;
 }
@@ -169,7 +164,7 @@ ol {
   width: fit-content;
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after{
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
 
@@ -199,7 +194,7 @@ ol {
   overflow: auto;
 }
 
-.content__list{
+.content__list {
   display: flex;
   flex-direction: column;
   gap: 30px;

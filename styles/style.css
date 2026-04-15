@@ -53,6 +53,10 @@ ol {
   background-color: #D9D9D9;
 }
 
+.content__card-link_current {
+  background-color: #545050;
+}
+
 .content {
   display: flex;
   align-items: flex-end;
@@ -68,7 +72,7 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .result__video {
@@ -97,7 +101,6 @@ ol {
   border: none;
   border-top: 1px #fff solid;
   border-bottom: 1px #fff solid;
-  opacity: 0.7;
   color: #fff;
   font-family: inherit;
   font-size: inherit;
@@ -105,6 +108,7 @@ ol {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  width: 225px;
 }
 
 .search-form__textfield::placeholder {
@@ -153,8 +157,17 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label:focus-visible {
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:focus-visible {
   outline: 1px solid #fff;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__label {
@@ -178,7 +191,7 @@ ol {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 0.94;
   text-transform: uppercase;
 }
 
@@ -239,7 +252,7 @@ ol {
 
 .content__video-card-title {
   display: block;
-  width: 100%;
+  max-width: 191px;
   margin-bottom: 6px;
   overflow: hidden;
   font-family: 'Oswald', sans-serif;
@@ -307,6 +320,7 @@ ol {
 
 .more-button {
   width: 100%;
+  padding: 6px 0;
 }
 
 .content__list-item {

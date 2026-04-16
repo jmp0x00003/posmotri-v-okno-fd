@@ -120,7 +120,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -159,10 +159,6 @@ ol {
 
 .search-form__textfield:focus {
   outline: none;
-}
-
-.search-form__textfield:focus-visible {
-  outline: 1px solid #fff;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -319,8 +315,8 @@ ol {
 }
 
 .more-button {
-  width: 100%;
-  padding: 6px 0;
+  width: 98%;
+  padding: 5px 0;
 }
 
 .content__list-item {
